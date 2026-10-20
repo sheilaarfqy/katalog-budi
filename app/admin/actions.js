@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 import { buatClientSesiAdmin } from "@/lib/supabase/server";
 
 export async function periksaLoginAdmin() {
@@ -97,4 +98,35 @@ export async function gantiPassword(prevState, formData) {
       error: err instanceof Error ? err.message : "Terjadi kesalahan saat mengganti password.",
     };
   }
+}
+
+export async function tambahProduk(formData) {
+  const { supabase } = await periksaLoginAdmin();
+
+  const nama = formData.get("nama");
+  const hargaRaw = formData.get("harga");
+  const harga = parseInt(hargaRaw, 10);
+  const kategori = formData.get("kategori");
+  const foto_url = formData.get("foto_url");
+  const deskripsi = formData.get("deskripsi");
+
+  if (!nama || isNaN(harga) || harga < 0) {
+    throw new Error("Nama dan harga produk valid wajib diisi.");
+  }
+
+  const { error } = await supabase.from("produk").insert({
+    nama: String(nama).trim(),
+    harga,
+    kategori: kategori ? String(kategori).trim() : null,
+    foto_url: foto_url ? String(foto_url).trim() : null,
+    deskripsi: deskripsi ? String(deskripsi).trim() : null,
+  });
+
+  if (error) {
+    throw new Error(`Gagal menambah produk: ${error.message}`);
+  }
+
+  revalidatePath("/");
+  revalidatePath("/admin");
+  redirect("/admin");
 }
