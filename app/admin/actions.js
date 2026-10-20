@@ -3,6 +3,20 @@
 import { redirect } from "next/navigation";
 import { buatClientSesiAdmin } from "@/lib/supabase/server";
 
+export async function periksaLoginAdmin() {
+  const supabase = await buatClientSesiAdmin();
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser();
+
+  if (error || !user) {
+    throw new Error("Akses ditolak. Silakan login terlebih dahulu.");
+  }
+
+  return { supabase, user };
+}
+
 export async function login(prevState, formData) {
   const data = formData instanceof FormData ? formData : prevState;
   const isActionState = formData instanceof FormData;
@@ -67,15 +81,7 @@ export async function gantiPassword(prevState, formData) {
   }
 
   try {
-    const supabase = await buatClientSesiAdmin();
-    const {
-      data: { user },
-      error: userError,
-    } = await supabase.auth.getUser();
-
-    if (userError || !user) {
-      return { error: "Sesi telah berakhir. Silakan login kembali." };
-    }
+    const { supabase } = await periksaLoginAdmin();
 
     const { error } = await supabase.auth.updateUser({
       password: String(passwordBaru),
