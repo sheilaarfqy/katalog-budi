@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi croissant butter">
+  <rect width="600" height="600" fill="#f3ead9"/>
+  <circle cx="300" cy="275" r="190" fill="#e9d8bd"/>
+  <ellipse cx="300" cy="398" rx="190" ry="35" fill="#8b5638" opacity=".12"/>
+  <path d="M109 332c37-79 88-139 143-165 17-8 37-4 49 11 14 18 29 21 47 10 20-12 41-25 58-25 35 0 67 41 80 105 14 72-8 131-47 132-25 1-48-38-66-74-13-26-25-37-41-33-18 4-24 26-31 52-12 44-28 84-58 84-39 0-94-40-134-97Z" fill="#b76c37"/>
+  <path d="M126 324c42-68 86-113 129-136m-91 187c54-42 104-70 157-84m-86 111c44-22 80-43 120-63m-41-150c25 22 43 45 60 73m-1-92c30 28 54 60 74 101m-28-81c28 39 47 78 58 124" fill="none" stroke="#e7a653" stroke-linecap="round" stroke-width="18"/>
+  <path d="M152 337c36-55 75-92 111-112m-60 160c43-31 82-52 124-66m-60 100c27-17 51-29 78-43" fill="none" stroke="#f5d18a" stroke-linecap="round" stroke-width="8"/>
+  <text x="300" y="518" text-anchor="middle" fill="#6f4935" font-family="Georgia,serif" font-size="31">croissant butter</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi es kopi susu gula aren">
+  <rect width="600" height="600" fill="#eee3d7"/>
+  <circle cx="300" cy="275" r="190" fill="#e1d0bd"/>
+  <ellipse cx="300" cy="428" rx="120" ry="25" fill="#79513d" opacity=".12"/>
+  <path d="M228 169h143l-16 228c-2 24-20 42-44 42h-24c-24 0-42-18-44-42l-15-228Z" fill="#f7f1e8" fill-opacity=".82" stroke="#a47d62" stroke-width="8"/>
+  <path d="m244 224 116-10-13 185c-1 16-13 27-28 27h-27c-15 0-27-11-28-27l-20-175Z" fill="#bd8b63"/>
+  <path d="m242 284 111-10-8 119c-1 18-14 31-32 31h-27c-15 0-27-11-29-27l-15-113Z" fill="#ead5b9"/>
+  <path d="M243 283c34 8 71 7 111-8" fill="none" stroke="#fff8eb" stroke-width="12"/>
+  <path d="M263 180v62m38-65v60m39-62v60" stroke="#7b4e35" stroke-linecap="round" stroke-width="10"/>
+  <path d="m371 178 37-48" fill="none" stroke="#a47d62" stroke-linecap="round" stroke-width="9"/>
+  <text x="300" y="518" text-anchor="middle" fill="#6f4935" font-family="Georgia,serif" font-size="29">es kopi susu gula aren</text>
+</svg>

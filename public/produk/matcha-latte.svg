@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi matcha latte">
+  <rect width="600" height="600" fill="#e9eddf"/>
+  <circle cx="300" cy="275" r="190" fill="#d8e0c9"/>
+  <ellipse cx="300" cy="428" rx="120" ry="25" fill="#526343" opacity=".12"/>
+  <path d="M228 169h143l-16 228c-2 24-20 42-44 42h-24c-24 0-42-18-44-42l-15-228Z" fill="#f7f6ed" fill-opacity=".88" stroke="#879875" stroke-width="8"/>
+  <path d="m244 224 116-10-13 185c-1 16-13 27-28 27h-27c-15 0-27-11-28-27l-20-175Z" fill="#89a66d"/>
+  <path d="m242 284 111-10-8 119c-1 18-14 31-32 31h-27c-15 0-27-11-29-27l-15-113Z" fill="#e9eedb"/>
+  <path d="M243 283c34 8 71 7 111-8" fill="none" stroke="#f7f6ed" stroke-width="12"/>
+  <path d="M263 180v62m38-65v60m39-62v60" stroke="#72885c" stroke-linecap="round" stroke-width="10"/>
+  <path d="m371 178 37-48" fill="none" stroke="#879875" stroke-linecap="round" stroke-width="9"/>
+  <text x="300" y="518" text-anchor="middle" fill="#526343" font-family="Georgia,serif" font-size="31">matcha latte</text>
+</svg>
